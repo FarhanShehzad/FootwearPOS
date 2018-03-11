@@ -1,0 +1,176 @@
+﻿<Window x:Class="StyloShoes.CutomerService"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StyloShoes"
+        mc:Ignorable="d"
+        Title="Cutomer Service" Height="505.958" Width="438.298">
+
+    <DockPanel>
+        <TabControl>
+            <TabItem Header="New Service">
+                <Canvas Margin="0,0,2,0">
+                    <Label FontSize="20" Canvas.Left="143" FontWeight="Bold" Canvas.Top="-8">New Service</Label>
+                    <Grid Height="217" Width="390" Canvas.Left="18" Canvas.Top="26" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Label FontWeight="Bold">Product ID</Label>
+                        <Label FontWeight="Bold" Grid.Row="1">Price</Label>
+                        <Label FontWeight="Bold" Grid.Row="2">Catagory</Label>
+                        <Label FontWeight="Bold" Grid.Row="3">Size</Label>
+                        <Label FontWeight="Bold" Grid.Row="4" Grid.Column="0">Color</Label>
+                        <Label FontWeight="Bold" Grid.Row="5" Grid.Column="0">Brand</Label>
+                        <Label FontWeight="Bold" Grid.Row="6" Grid.Column="0">Charges</Label>
+                        <Label FontWeight="Bold" Grid.Row="3" Grid.Column="2">Phone</Label>
+                        <Label FontWeight="Bold" Grid.Row="2" Grid.Column="2">Address</Label>
+                        <Label FontWeight="Bold" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,127,0">Customer Name</Label>
+                        <Label FontWeight="Bold" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,137,0">Purchase Date</Label>
+                        <Label FontWeight="Bold" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,137,0">Service Date</Label>
+                        <Label FontWeight="Bold" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,137,0">Return Date</Label>
+                        <TextBox Name="uid" FontSize="15" Grid.Column="1" Height="24"/>
+                        <Button Click="Search_Click" Width="70" Grid.Column="2" Grid.Row="0" Height="22">Search</Button>
+                        <TextBox Name="uprice" FontSize="15" Grid.Row="1" Height="24" Grid.Column="1" IsEnabled="False"></TextBox>
+                        <TextBox Name="ucatagory" Grid.Row="2" FontSize="15" Height="24" Grid.Column="1" IsEnabled="False"></TextBox>
+                        <TextBox Name="usize" Grid.Row="3" FontSize="15" Height="24" Grid.Column="1" IsEnabled="False"></TextBox>
+                        <TextBox Name="ucolor" Grid.Row="4" Height="24" FontSize="15" Grid.Column="1" Margin="0,3,0,3" IsEnabled="False"></TextBox>
+                        <TextBox Name="ubrand" Grid.Row="5" Height="24" FontSize="15" Grid.Column="1" Margin="0,3,0,3" IsEnabled="False"></TextBox>
+                        <TextBox Name="ucharges" Grid.Row="6" Height="24" FontSize="15" Grid.Column="1" Margin="0,3,0,3"></TextBox>
+                        <TextBox Name="uname" Grid.Row="1" FontSize="15" Height="24" Grid.Column="3" Margin="26,3,0,4"></TextBox>
+                        <TextBox Name="uaddress" Grid.Row="2" FontSize="15" Height="24" Grid.Column="3" Margin="0,3,0,4"></TextBox>
+                        <TextBox Name="uphone" Grid.Row="3" FontSize="15" Height="24" Grid.Column="3" Margin="0,3,0,4"></TextBox>
+                        <DatePicker   Name="udpDate" Grid.Row="4" Grid.Column="3" FontSize="15" Height="24" Margin="26,3,0,3" IsTodayHighlighted="False"></DatePicker>
+                        <DatePicker   Name="uServiceDate" Grid.Row="5" Grid.Column="3" FontSize="15" Height="24" Margin="26,3,0,3" IsTodayHighlighted="False"></DatePicker>
+                        <DatePicker   Name="uReturnDate" Grid.Row="6" Grid.Column="3" FontSize="15" Height="24" Margin="26,3,0,3" IsTodayHighlighted="False"></DatePicker>
+                    </Grid>
+                    <Border BorderThickness="1" BorderBrush="Black" Grid.Row="4" Canvas.Left="13" Canvas.Top="262" Height="154" Width="285">
+                        <TextBlock  Name="reciept"  Margin="3,2,3,0" Height="148" VerticalAlignment="Top" ></TextBlock>
+                    </Border>
+                    <Button Click="ShowService_Click"  Canvas.Left="303" Canvas.Top="263" Width="93" Height="27">Show Service</Button>
+                    <Button Click="NewService_Click" Width="93" Height="27" Grid.Column="3" Grid.Row="3" Canvas.Left="303" Canvas.Top="295">New Service</Button>
+                    <Button Click="AddService_Click" Width="93" Height="27"  FontWeight="Bold" Canvas.Left="303" Canvas.Top="327">Add Service</Button>
+                    <Button Click="Save_Click" Width="93" Height="27" Canvas.Left="303" Canvas.Top="359">Save</Button>
+                    <Button Click="Back_Click" Width="93" Height="27"  Canvas.Left="303" Canvas.Top="390">Back</Button>
+                    <Label Foreground="Red" Name="uStatus" Canvas.Left="13" Canvas.Top="417" Width="285" Height="25"></Label>
+                </Canvas>
+            </TabItem>
+            <TabItem Header="Update Service">
+                <Canvas Margin="0,0,2,0">
+                    <Label FontSize="20" Canvas.Left="143" FontWeight="Bold" Canvas.Top="-8">Update a Service</Label>
+                    <Grid Height="217" Width="390" Canvas.Left="18" Canvas.Top="26" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Label FontWeight="Bold">Product ID</Label>
+                        <Label FontWeight="Bold" Grid.Row="1">Price</Label>
+                        <Label FontWeight="Bold" Grid.Row="2">Catagory</Label>
+                        <Label FontWeight="Bold" Grid.Row="3">Size</Label>
+                        <Label FontWeight="Bold" Grid.Row="4" Grid.Column="0">Color</Label>
+                        <Label FontWeight="Bold" Grid.Row="5" Grid.Column="0">Brand</Label>
+                        <Label FontWeight="Bold" Grid.Row="6" Grid.Column="0">Charges</Label>
+                        <Label FontWeight="Bold" Grid.Row="3" Grid.Column="2">Phone</Label>
+                        <Label FontWeight="Bold" Grid.Row="2" Grid.Column="2">Address</Label>
+                        <Label FontWeight="Bold" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,127,0">Customer Name</Label>
+                        <Label FontWeight="Bold" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,137,0">Purchase Date</Label>
+                        <Label FontWeight="Bold" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,137,0">Service Date</Label>
+                        <Label FontWeight="Bold" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,137,0">Return Date</Label>
+                        <TextBox Name="id" FontSize="15" Grid.Column="1" Height="24"/>
+                        <Button Click="Search1_Click" Width="70" Grid.Column="2" Grid.Row="0" Height="22">Search</Button>
+                        <TextBox Name="price" FontSize="15" Grid.Row="1" Height="24" Grid.Column="1" IsEnabled="False"></TextBox>
+                        <TextBox Name="catagory" Grid.Row="2" FontSize="15" Height="24" Grid.Column="1" IsEnabled="False"></TextBox>
+                        <TextBox Name="size" Grid.Row="3" FontSize="15" Height="24" Grid.Column="1" IsEnabled="False"></TextBox>
+                        <TextBox Name="color" Grid.Row="4" Height="24" FontSize="15" Grid.Column="1" Margin="0,3,0,3" IsEnabled="False"></TextBox>
+                        <TextBox Name="brand" Grid.Row="5" Height="24" FontSize="15" Grid.Column="1" Margin="0,3,0,3" IsEnabled="False"></TextBox>
+                        <TextBox Name="charges" Grid.Row="6" Height="24" FontSize="15" Grid.Column="1" Margin="0,3,0,3" IsEnabled="False"></TextBox>
+                        <TextBox Name="name" Grid.Row="1" FontSize="15" Height="24" Grid.Column="3" Margin="26,3,0,4" IsEnabled="False"></TextBox>
+                        <TextBox Name="address" Grid.Row="2" FontSize="15" Height="24" Grid.Column="3" Margin="0,3,0,4"></TextBox>
+                        <TextBox Name="phone" Grid.Row="3" FontSize="15" Height="24" Grid.Column="3" Margin="0,3,0,4"></TextBox>
+                        <DatePicker   Name="dpDate" Grid.Row="4" Grid.Column="3" FontSize="15" Height="24" Margin="26,3,0,3" IsTodayHighlighted="False" IsEnabled="False"></DatePicker>
+                        <DatePicker   Name="ServiceDate" Grid.Row="5" Grid.Column="3" FontSize="15" Height="24" Margin="26,3,0,3" IsTodayHighlighted="False" IsEnabled="False"></DatePicker>
+                        <DatePicker   Name="ReturnDate" Grid.Row="6" Grid.Column="3" FontSize="15" Height="24" Margin="26,3,0,3" IsTodayHighlighted="False"/>
+                    </Grid>
+
+                    <Button Click="UpdateService_Click"  Canvas.Left="314" Canvas.Top="263" Width="93" Height="27">Update Service</Button>
+                    <Button Click="Back_Click" Width="93" Height="27"  Canvas.Left="216" Canvas.Top="263">Back</Button>
+                    <Label Foreground="Red" Name="Status" Canvas.Left="18" Canvas.Top="265" Width="193" Height="25"></Label>
+                </Canvas>
+            </TabItem>
+            <TabItem Header="View Service">
+                <Canvas Margin="0,0,2,0">
+                    <Label FontSize="20" Canvas.Left="143" FontWeight="Bold" Canvas.Top="-8">View a Service</Label>
+                    <Grid Height="217" Width="390" Canvas.Left="18" Canvas.Top="26" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Label FontWeight="Bold">Product ID</Label>
+                        <Label FontWeight="Bold" Grid.Row="1">Price</Label>
+                        <Label FontWeight="Bold" Grid.Row="2">Catagory</Label>
+                        <Label FontWeight="Bold" Grid.Row="3">Size</Label>
+                        <Label FontWeight="Bold" Grid.Row="4" Grid.Column="0">Color</Label>
+                        <Label FontWeight="Bold" Grid.Row="5" Grid.Column="0">Brand</Label>
+                        <Label FontWeight="Bold" Grid.Row="6" Grid.Column="0">Charges</Label>
+                        <Label FontWeight="Bold" Grid.Row="3" Grid.Column="2">Phone</Label>
+                        <Label FontWeight="Bold" Grid.Row="2" Grid.Column="2">Address</Label>
+                        <Label FontWeight="Bold" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,127,0">Customer Name</Label>
+                        <Label FontWeight="Bold" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,137,0">Purchase Date</Label>
+                        <Label FontWeight="Bold" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,137,0">Service Date</Label>
+                        <Label FontWeight="Bold" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Margin="0,0,137,0">Return Date</Label>
+                        <TextBox Name="vid" FontSize="15" Grid.Column="1" Height="24"/>
+                        <Button Click="Search2_Click" Width="70" Grid.Column="2" Grid.Row="0" Height="22">Search</Button>
+                        <TextBox Name="vprice" FontSize="15" Grid.Row="1" Height="24" Grid.Column="1" IsEnabled="False"></TextBox>
+                        <TextBox Name="vcatagory" Grid.Row="2" FontSize="15" Height="24" Grid.Column="1" IsEnabled="False"></TextBox>
+                        <TextBox Name="vsize" Grid.Row="3" FontSize="15" Height="24" Grid.Column="1" IsEnabled="False"></TextBox>
+                        <TextBox Name="vcolor" Grid.Row="4" Height="24" FontSize="15" Grid.Column="1" Margin="0,3,0,3" IsEnabled="False"></TextBox>
+                        <TextBox Name="vbrand" Grid.Row="5" Height="24" FontSize="15" Grid.Column="1" Margin="0,3,0,3" IsEnabled="False"></TextBox>
+                        <TextBox Name="vcharges" Grid.Row="6" Height="24" FontSize="15" Grid.Column="1" Margin="0,3,0,3" IsEnabled="False"></TextBox>
+                        <TextBox Name="vname" Grid.Row="1" FontSize="15" Height="24" Grid.Column="3" Margin="26,3,0,4" IsEnabled="False"></TextBox>
+                        <TextBox Name="vaddress" Grid.Row="2" FontSize="15" Height="24" Grid.Column="3" Margin="0,3,0,4" IsEnabled="False"></TextBox>
+                        <TextBox Name="vphone" Grid.Row="3" FontSize="15" Height="24" Grid.Column="3" Margin="0,3,0,4" IsEnabled="False"></TextBox>
+                        <DatePicker   Name="vdpDate" Grid.Row="4" Grid.Column="3" FontSize="15" Height="24" Margin="26,3,0,3" IsEnabled="False"></DatePicker>
+                        <DatePicker   Name="vServiceDate" Grid.Row="5" Grid.Column="3" FontSize="15" Height="24" Margin="26,3,0,3" IsEnabled="False"></DatePicker>
+                        <DatePicker   Name="vReturnDate" Grid.Row="6" Grid.Column="3" FontSize="15" Height="24" Margin="26,3,0,3" IsEnabled="False"></DatePicker>
+                    </Grid>
+                    <Button Click="Back_Click" Width="93" Height="27"  Canvas.Left="303" Canvas.Top="263">Back</Button>
+                    <Label Foreground="Red" Name="vStatus" Canvas.Left="18" Canvas.Top="265" Width="271" Height="25"></Label>
+                </Canvas>
+            </TabItem>
+        </TabControl>
+    </DockPanel>
+</Window>

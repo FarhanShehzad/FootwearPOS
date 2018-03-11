@@ -1,0 +1,34 @@
+﻿<Window x:Class="StyloShoes.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StyloShoes"
+        mc:Ignorable="d"
+        Title="Staff Registration" Height="255" Width="525">
+    <Canvas>
+        <Label FontSize="20" FontWeight="Bold" Canvas.Left="188" Canvas.Top="-8">
+            Registration Form
+        </Label>
+        <Label Canvas.Left="74" Canvas.Top="34" FontWeight="Bold">
+            Username
+        </Label>
+        <Label FontWeight="Bold" Canvas.Left="74" Canvas.Top="93">New Password</Label>
+        <Label FontWeight="Bold" Canvas.Left="74" Canvas.Top="124">
+            Confirm Password
+        </Label>
+        <Label FontWeight="Bold" Canvas.Left="74" Canvas.Top="155" RenderTransformOrigin="0.457,1.269" Width="35">Role</Label>
+        <Label FontWeight="Bold" Canvas.Left="74" Canvas.Top="62" RenderTransformOrigin="0.457,1.269" Width="46">Name</Label>
+        <TextBox Name="username" Width="303" Canvas.Left="145" FontSize="15" Canvas.Top="34" Height="26"></TextBox>
+        <TextBox Name="name" Width="328" Canvas.Left="120" FontSize="15" Canvas.Top="64" Height="26"></TextBox>
+        <PasswordBox Name="pass1" Width="282" Canvas.Left="166" FontSize="15" Canvas.Top="93" Height="26"></PasswordBox>
+        <PasswordBox Name="pass2" Width="262" Canvas.Left="186" FontSize="15" Canvas.Top="129" Height="26"></PasswordBox>
+        <ComboBox Name="status" Width="339" Canvas.Left="109" FontSize="15" Canvas.Top="155" Height="26">
+            <ComboBoxItem Tag="Male">admin</ComboBoxItem>
+            <ComboBoxItem Tag="Female" IsSelected="True">staff</ComboBoxItem>
+        </ComboBox>
+        <Button Click="Register_Click" Height="22" Canvas.Left="303" Canvas.Top="186" Width="70">Register</Button>
+        <Button Click="Back_Click" Width="70" Height="22" Canvas.Left="378" Canvas.Top="186">Back</Button>
+        <Label Name="Error" Foreground="Red" RenderTransformOrigin="20,3.9" Canvas.Left="79" Canvas.Top="186" Height="28" Width="219"></Label>
+    </Canvas>
+</Window>

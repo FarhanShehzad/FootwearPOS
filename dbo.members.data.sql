@@ -1,0 +1,1 @@
+﻿SELECt * from dbo.members where pk = 0

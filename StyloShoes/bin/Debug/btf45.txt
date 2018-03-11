@@ -1,0 +1,9 @@
+	   EFSI PURCHASE RECIEPT
+	15/12 NEW MARKET, KISHOREGAN
+   Cell: +880-1711-360899 / +880-1919-360899
+Product ID		btf45
+Price			600
+Color			red
+Size			female
+Brand			Bata
+Purchase Date	01-May-17

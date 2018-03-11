@@ -1,0 +1,15 @@
+	   EFSI PURCHASE RECIEPT
+	15/12 NEW MARKET, KISHOREGAN
+   Cell: +880-1711-360899 / +880-1919-360899
+Product ID		BTF13
+Price			450
+Color			Purple
+Size			Female
+Brand			Stylo
+Purchase Date	03-May-17
+Customer Name			Umair Asif
+Address		ABC
+Phone			090078601
+Service Date		03-May-17
+Return Date			18-May-17
+Service Charges		400

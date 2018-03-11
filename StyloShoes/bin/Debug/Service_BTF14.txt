@@ -1,0 +1,16 @@
+	   EFSI PURCHASE RECIEPT
+	15/12 NEW MARKET, KISHOREGAN
+   Cell: +880-1711-360899 / +880-1919-360899
+Product ID		BTF14
+Price			600
+Color			Red
+Size			Male
+Brand			Bata
+Purchase Date	30-Apr-17
+Customer Name			Muhammad Jalil
+Address		sdasd
+Phone			+652313655
+Service Date		01-May-17
+Return Date			16-May-17
+Service Charges		150
+0

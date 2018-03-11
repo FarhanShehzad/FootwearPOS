@@ -1,0 +1,5 @@
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BussinesObject\bin\Debug\BussinesObject.dll
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BussinesObject\bin\Debug\BussinesObject.pdb
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BussinesObject\obj\Debug\BussinesObject.csprojResolveAssemblyReference.cache
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BussinesObject\obj\Debug\BussinesObject.dll
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BussinesObject\obj\Debug\BussinesObject.pdb

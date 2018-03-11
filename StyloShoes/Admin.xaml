@@ -1,0 +1,30 @@
+﻿<Window x:Class="StyloShoes.admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StyloShoes"
+        mc:Ignorable="d"
+        Title="Welcome to Admin Panel - Stylo POS" Height="240" Width="525">
+    <Canvas>
+        <Label FontWeight="Bold" FontSize="25" Canvas.Left="58">
+            Welcome to Admin Panel
+        </Label>
+        <Button FontSize="15" Name="logout" Click="logout_Click" Canvas.Left="408" Canvas.Top="11" Width="83" Height="26">Logout</Button>
+        <Canvas Height="156" Width="472" Canvas.Left="13" Canvas.Top="45">
+            <Image x:Name="manage_stock_png" MouseDown="ManageStock_Click" Height="57" Canvas.Left="55" Source="manage-stock.png" Stretch="Fill" Canvas.Top="8" Width="55"/>
+            <Image x:Name="sales_report_png" MouseDown="sales_report_png_MouseDown" Height="57" Canvas.Left="204" Source="sales-report.png" Stretch="Fill" Canvas.Top="8" Width="56"/>
+            <Image x:Name="generalcontracting_icon_png" MouseDown="Services_Click" Height="57" Canvas.Left="350" Source="generalcontracting-icon.png" Stretch="Fill" Canvas.Top="8" Width="79"/>
+            <Image x:Name="changepass_png" MouseDown="ChangePass_Click" Height="53" Canvas.Left="120" Source="changepass.png" Stretch="Fill" Canvas.Top="85" Width="56"/>
+            <Image x:Name="staff_png" MouseDown="Staff_Click" Height="53" Canvas.Left="284" Source="staff.png" Stretch="Fill" Canvas.Top="85" Width="51"/>
+            <Label Canvas.Left="40" Canvas.Top="59">Manage Stock</Label>
+            <Label Canvas.Left="194" Canvas.Top="59">Sales Report</Label>
+            <Label Canvas.Left="364" Canvas.Top="59">Services</Label>
+            <Label Canvas.Left="98" Canvas.Top="130">Update Password</Label>
+            <Label Canvas.Left="260" Canvas.Top="130">Staff Registration</Label>
+
+        </Canvas>
+
+
+    </Canvas>
+</Window>

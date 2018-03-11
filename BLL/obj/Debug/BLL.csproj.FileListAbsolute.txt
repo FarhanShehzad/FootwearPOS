@@ -1,0 +1,11 @@
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BLL\bin\Debug\stylo.mdf
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BLL\bin\Debug\stylo_log.ldf
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BLL\bin\Debug\BLL.dll
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BLL\bin\Debug\BLL.pdb
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BLL\bin\Debug\BussinesObject.dll
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BLL\bin\Debug\DAL.dll
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BLL\bin\Debug\BussinesObject.pdb
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BLL\bin\Debug\DAL.pdb
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BLL\obj\Debug\BLL.dll
+C:\Users\alibh\OneDrive\Pictures\Documents\Visual Studio 2015\Projects\StyloShoes\BLL\obj\Debug\BLL.pdb
